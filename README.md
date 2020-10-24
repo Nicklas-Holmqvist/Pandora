@@ -1,4 +1,4 @@
-# laboration-1
+# Laboration 1
 Inlämning nr 2 i kursen JavaScript - Första dagen
 
 **Story
