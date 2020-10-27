@@ -29,12 +29,22 @@ h2 {
     cursor: pointer;
 }
 
-.story-section {
+main {
+    /* position: relative; */
     height: 100%;
+}
+
+.story-section {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+
+    /* margin-left: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-direction: column;
 
+    transition: margin-left 1s ease;
 }

@@ -1,56 +1,49 @@
-const partOneHeight = document.querySelector('#part-1').style.height = "100%";
-const partOneDisplay = document.querySelector('#part-1').style.display = "flex";
 
-const partTwoHeight = document.querySelector('#part-2').style.height = "0%";
-const partTwoDisplay = document.querySelector('#part-2').style.display = 'none';
+// Scenbyten
 
-const partThreeHeight = document.querySelector('#part-3').style.height = "0%";
-const partThreeDisplay = document.querySelector('#part-3').style.display = "none";
-
-const partFourHeight = document.querySelector('#part-4').style.height = "0%";
-const partFourDisplay = document.querySelector('#part-4').style.display = 'none';
-
+const partTwoDisplay = document.querySelector('#part-1').style.marginLeft = '0';
 
 function nextPart() {
-    const partOneHeight = document.querySelector('#part-1').style.height = "0%";
-    const partOneDisplay = document.querySelector('#part-1').style.display = "none";
-    const partTwoHeight = document.querySelector('#part-2').style.height = "100%";
-    const partTwoDisplay = document.querySelector('#part-2').style.display = 'flex';
+    const partOneHeight = document.querySelector('#part-1').style.marginLeft = "-100%";
+    const partTwoHeight = document.querySelector('#part-2').style.marginLeft = "0";
 }
 function nextPart2() {
-    const partTwoHeight = document.querySelector('#part-2').style.height = "0%";
-    const partTwoDisplay = document.querySelector('#part-2').style.display = "none";
-    const partThreeHeight = document.querySelector('#part-3').style.height = "100%";
-    const partThreeisplay = document.querySelector('#part-3').style.display = 'flex';
+    const partOneHeight = document.querySelector('#part-2').style.marginLeft = "-100%";
+    const partTwoHeight = document.querySelector('#part-3').style.marginLeft = "0";
+
 }
 function nextPart3() {
-    const partThreeHeight = document.querySelector('#part-3').style.height = "0%";
-    const partThreeDisplay = document.querySelector('#part-3').style.display = "none";
-    const partFourHeight = document.querySelector('#part-4').style.height = "100%";
-    const partFourDisplay = document.querySelector('#part-4').style.display = 'flex';
+    const partOneHeight = document.querySelector('#part-3').style.marginLeft = "-100%";
+    const partTwoHeight = document.querySelector('#part-4').style.marginLeft = "0";
 }
+
+// Välj ett namn
+let myName 
 
 document.querySelector('#chooseName').addEventListener('click', getMyName);
 
-
 function getMyName() {
 
-    const getName = document.querySelector('#myNameInput').value;
-    console.log(getName)
+    myName = document.querySelector('#myNameInput').value;
+    console.log(myName)
 
-    if (getName == "Karl" || getName == "karl") {
-        document.querySelector('#myNameIs').innerText = "Du har bra smak!"
+    document.querySelector('#myNameIs').innerText = "Hej " + myName + ", det var ju ett fint namn. Men jag får se om jag kan komma ihåg det!"
 
-    }
+    // if (getName == "Karl" || getName == "karl") {
+    //     document.querySelector('#myNameIs').innerText = "Du har bra smak!"
 
-    else if (getName == "David" || getName == "david") {
-        document.querySelector('#myNameIs').innerText = "Hehe, inte så troligt! Hej Karl!"
-    }
+    // }
 
-    else {
-        document.querySelector('#myNameIs').innerText = "Hej " + getName + ", det var ju ett fint namn. Men jag tror jag kallar dig Karl!"
-    }
+    // else if (getName == "David" || getName == "david") {
+    //     document.querySelector('#myNameIs').innerText = "Hehe, inte så troligt! Hej Karl!"
+    // }
+
+    // else {
+    //     document.querySelector('#myNameIs').innerText = "Hej " + myName + ", det var ju ett fint namn. Men jag tror jag kallar dig Karl!"
+    // }
 }
+
+// Välj status, morgontrött eller ej
 
 document.querySelector('#chooseStatus').addEventListener('click', playerMorningStatus);
 
@@ -58,18 +51,56 @@ function playerMorningStatus() {
 
     const myStatus = document.querySelector('#isTiredInMorning').value;
 
-    if (myStatus == "Ja" || myStatus == "ja") {
-        document.querySelector('#myStatus').innerText = "Nej, nej, nej... det blir inget roligt spel om du väljer detta. Välj det andra!"
+    if (myStatus == "Klösmage" || myStatus == "klösmage") {
+        document.querySelector('#myStatus').innerText = "Oj oj oj..." + myName + " det här kommer inte bli lätt!";
     }
 
-    else if (myStatus == "Nej" || myStatus == "nej") {
-        document.querySelector('#myStatus').innerText = "Intressant, hoppas du inte får kicken!"
+    else if (myStatus == "Klippa" || myStatus == "klippa") {
+        document.querySelector('#myStatus').innerText = "Intressant " + myName + ", nu får de allt se upp!"
     }
 
     else {
         document.querySelector('#myStatus').innerText = "Det är tyvärr inget val!"
     }
 }
+
+// Välj transportmedel
+
+const hideLockup = document.querySelector('#showLockUp');
+hideLockup.style.display = "none";
+
+document.querySelector('#chooseTransport').addEventListener('click', playerTransport);
+
+const chooseTransport = document.querySelector('#chooseTransport');
+const inputTransport = document.querySelector('#whatTransport');
+const textTransport = document.querySelector('#textTransport');
+
+function playerTransport() {
+
+    const whatTransport = document.querySelector('#whatTransport').value;
+
+    if (whatTransport == "Buss" || whatTransport == "buss") {
+        textTransport.innerText = "Jag tar nog bussen, de går ju rätt ofta"
+    }
+
+    else if (whatTransport == "Bil" || whatTransport == "bil") {
+        textTransport.innerText = "Hoppas jag slipper köerna bara!"
+    }
+
+    else if (whatTransport == "Cykel" || whatTransport == "cykel") {
+        inputTransport.style.display = "none";
+        chooseTransport.style.display = "none";
+
+        hideLockup.style.display = "contents";
+        document.querySelector('#textTransport').innerText = "Ska vi se om vi löser det! Fyra siffror ska matas in."
+    }
+
+    else {
+        resultat.innerText = "Det är tyvärr inget val!"
+    }
+}
+
+// Cykellåset
 
 document.querySelector('#lockUp').addEventListener('click', lockUp)
 
