@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <title>Första Dagen | Nicklas Holmqvist</title>
 </head>
 <body>
     <div class="story-section" id="part-1">
         <h1>Första dagen</h1>
-        <div class="button" id="part-1-btn" onclick="nextPart()">Fortsätt</div>
+        <p>Jobbet du inte vill komma sent till!</p>
+        <div class="button" id="part-1-btn" onclick="nextPart()">Starta spelet</div>
     </div>
     <div class="story-section" id="part-2">
-        <h1>Du får sparken</h1>
+        <h2>Välj ett namn</h2>
+        <input type="text" id="myNameInput">
+        <div class="button" id="chooseName">Välj namn</div>
+        <p id="myNameIs"></p>
         <div class="button" id="part-2-btn" onclick="nextPart2()">Fortsätt</div>
     </div>
     <div class="story-section" id="part-3">
-        <h1>Frukost?</h1>
+        <p>Så nu vet vi vad du heter, eller något.</p>
+        <p>Nu till den avgörande punkten i spelet.</p>
+        <p>Är du en mogonpigg människa eller den som vill ligga och dra dig?</p>
+        <p>Svara Ja/Nej på frågan!</p>
+        <input type="text" id="isTiredInMorning" placeholder="Skriv Ja eller Nej">
+        <div class="button" id="chooseStatus">Fortsätt</div>
+        <p id="myStatus"></p>
         <div class="button" id="part-3-btn" onclick="nextPart3()">Fortsätt</div>
     </div>
     <div class="story-section" id="part-4">
-        <h1>Cykellåset</h1>
-        <div class="button" id="part-4-btn" onclick="nextPart()">Fortsätt</div>
+        <h2>Cykellåset</h2>
+        <p>Du står och låser upp din cykel.</p>
+        <p>Men trött som man är, funkar inte riktigt allt än!</p>
+        <p>Tar du bussen istället eller försöker du låsa upp cykeln?</p>
+        <input type="text" id="nr1">
+
+        <div class="button" id="lockUp">Lås upp</div>
+        <p id="resultat"></p>
+        <div class="button" id="part-4-btn" onclick="nextPart3()">Fortsätt</div>
     </div>
     <script src="./style/app.js"></script>
 </body>
