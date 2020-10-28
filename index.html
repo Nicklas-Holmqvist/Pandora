@@ -13,13 +13,13 @@
     <a href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a> -->
 
 
-    <title>Första Dagen | Nicklas Holmqvist</title>
+    <title>Första Dagen På Pandora | Nicklas Holmqvist</title>
 </head>
 <body>
     <main>
 
         <!-- Scen för att starta spelet -->
-        <div class="story-section" id="part-1">
+        <div class="story-section start-page" id="part-1">
             <h1>Första dagen på Pandora</h1>
             <p>Här vill du inte vara ensam!</p>
             <div class="button" id="part-1-btn" onclick="nextPart()">Starta spelet</div>
@@ -29,27 +29,27 @@
         <div class="story-section" id="part-2">
             <h2>Välj ett namn</h2>
             <p>Ju tuffare desto större chans att överleva!!!</p>
-            <input type="text" id="myNameInput">
-            <div class="button" id="chooseName">Välj namn</div>
+            <input type="text" id="myNameInput" placeholder="Ex. Claptrap">
+            <div class="button" id="chooseName"  >Välj namn</div>
             <p id="myNameIs"></p>
             <div class="button" id="part-2-btn" onclick="nextPart2()">Fortsätt</div>
         </div>
 
-        <!-- Välj morgonpigg eller inte -->
+        <!-- Klösmage eller Klippa -->
         <div class="story-section" id="part-3">
             <p>Så nu vet vi vad du heter, eller något.</p>
             <p>Nu till den avgörande punkten i spelet.</p>
             
             <p>Har du klösmage eller står du stadigt som en klippa?</p>
-            <input type="text" id="isTiredInMorning" placeholder="Skriv Klösmage eller Klippa">
+            <input type="text" id="isTiredInMorning" placeholder="Klösmage / Klippa">
             <div class="button" id="chooseStatus">Tufft nog?</div>
             <p id="myStatus"></p>
             <div class="button" id="part-3-btn" onclick="nextPart3()">Fortsätt</div>
         </div>
 
-        <!-- Kompisen väcker dig -->
+        <!-- Du väcks ute i ödemarken -->
         <div class="story-section" id="part-4">
-            <div class="story-text flex ">
+            <div class="story-text">
                 <p>Du vaknar upp av att en inre röst ropar ditt namn.</p>
                 <p><em>- Det är dags att stiga upp innan de hittar dig!</em></p>
                 <p>Vem är det som pratar, det är ju ingen här!?</p>
@@ -63,7 +63,7 @@
 
         <!-- Omgivningen -->
         <div class="story-section" id="part-5">
-            <div class="story-text flex ">
+            <div class="story-text ">
             <p><em>"Pandora är en kal och livlös plats där endast de tuffaste överlever.
                 
                 Vattnet har sedan länge försvunnit och de brunnar som existerar är hårt bevakade..."
@@ -76,9 +76,9 @@
             <div class="button" id="toHouse">Gå vidare</div>
         </div>
 
-        <!-- Frukost -->
+        <!-- Kassaskåpet -->
         <div class="story-section" id="part-6">
-            <div class="story-text flex ">
+            <div class="story-text">
                 <p>Du kommer in i huset och ser ett kassaskåp med sifferkod stående i ena hörnet.</p>
                 <p>Det sitter en lapp fast tejpad på luckan</p>
                 
@@ -93,9 +93,9 @@
             <div class="button" id="part-4-btn" onclick="nextPart3()">Fortsätt</div>
         </div>
 
-        <!-- Välj transport -->
+        <!-- Välj vapen -->
         <div class="story-section" id="part-7">
-            <div class="story-text flex ">
+            <div class="story-text">
                 <p>Inne i kassaskåpet hänger det ett par feta vapen.</p>
                 
                 <ul>
@@ -117,7 +117,7 @@
 
         <!-- Shotgun-1 -->
         <div class="story-section" id="part-8">
-            <div class="story-text flex ">
+            <div class="story-text">
                 <p>Du hör alla fordon stanna en bit från huset och en grov röst börjar ropa till dig.</p>
                 
                 <em>- Kom ut ifrån ditt lilla hål, vi vet att du är där inne!
@@ -131,17 +131,30 @@
             <input type="text" id="doShotgun" placeholder="Gömmer eller Rushar?">
             <div class="button">Välj</div>
         </div>
-
+        
         <!-- Shotgun-2 -->
         <div class="story-section" id="part-9">
+            <div class="story-text">
+                <p>Du öppnar piporna och pluggar i de två patronerna</p>
+                
+                <em>- Hoppas på bra spridning!</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button">Jag är grym!</div>
+            <div class="button">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Shotgun-3 -->
+        <div class="story-section" id="part-10">
             <p id="endingShotgun1"></p>
             <p id="endingShotgun2"></p>
             <div class="button startOver">Restart</div>
         </div>
 
         <!-- Pistol-1 -->
-        <div class="story-section" id="part-10">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-11">
+            <div class="story-text">
                 <p>Med god tro till pistolen går du ut ställer dig framför huset.
                     Du skriker till banditerna.</p>
                     
@@ -150,12 +163,25 @@
                 <p>Alla 16 banditer ställer sig i ett led och gör sig redo.</p>
                 <em>Svetten började rinna i pannan och du kände att slutet var nära</em>
             </div>
-            <div class="button">Skjut!</div>
+            <div class="button">Förbered</div>
         </div>
 
         <!-- Pistol-2 -->
-        <div class="story-section" id="part-11">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-12">
+            <div class="story-text">
+                <p>Du snurrar på magasinet och tittar på de fyra ynkliga kulorna</p>
+                
+                <em>- Undrar hur många de är där ute?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button">Jag är grym!</div>
+            <div class="button">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Pistol-3 -->
+        <div class="story-section" id="part-13">
+            <div class="story-text">
                 <p id="">Du hinner skjuta av tre skott innan de första skotten träffar dig i vänstra armen och högra benet.</p>
                 <p>Marken närmade sig fort och dammet yrde vid det tunga fallet.</p>
                 <p>Det tystade och du hörde fotsteg närma sig, och en grov röst hörs.</p>
@@ -167,8 +193,8 @@
         </div>
 
         <!-- Prickskyttgevär-1 -->
-        <div class="story-section" id="part-12">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-14">
+            <div class="story-text">
                 <p>Innan alla banditer kom till huset, hade du hunnit springa upp på en höjd.
                     Där låg du förberedd i bakhåll med siktet mot den första bilen.</p>
                 <p>Innan de hann stanna drog du iväg ett skott mot föraren.</p>
@@ -178,12 +204,25 @@
                 <em>Du trodde att du var safe nu, men ack vad det kan bedra en.</em>
                 <em>Bakom dig hördes ett väsande från ett av Pandoras mest skräkinjagande rovdjur</em>
             </div>
-            <div class="button">Möt din död!</div>
+            <div class="button">Förbered</div>
         </div>
 
         <!-- Prickskyttgevär-2 -->
-        <div class="story-section" id="part-13">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-15">
+            <div class="story-text">
+                <p>Du stannar upp och tänker, kommer jag klara mig med endast ett skott?</p>
+                
+                <em>- Är jag en man eller en mus?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button">Jag är MAN!</div>
+            <div class="button">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Prickskyttgevär-3 -->
+        <div class="story-section" id="part-16">
+            <div class="story-text">
                 <p id="endingPSG1">Vilddjurets käftar försöker få tag på dig, men du väjer undan med händerna.</p>
                 <p>Du hittar en vass sten på marken och hugger till i huvudet.</p>
                 <p>Vilddjuret gnyr till och börjar yla.</p>
@@ -196,19 +235,30 @@
         </div>
 
         <!-- Fatman-1 -->
-        <div class="story-section" id="part-14">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-17">
+            <div class="story-text">
                 <em>- Något måste finnas här omkring som jag kan använda!</em>
                 <p>Du springer runt och rotar i hyllor, lådor, högt å lågt.</p>
                 <p>Till slut hittar du en liten mininuke liggande långt in i ett fack i en byrå.</p>
                 <em>- Nu har jag allt jag behöver!</em>
             </div>
-            <div class="button">Gå ut!</div>
+            <div class="button">Förbered</div>
         </div>
 
         <!-- Fatman-2 -->
-        <div class="story-section" id="part-15">
-            <div class="story-text flex ">
+        <div class="story-section" id="part-18">
+            <div class="story-text">                
+                <em>- Kommer jag överleva när det är så nära?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button">Om jag tar skydd?</div>
+            <div class="button">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Fatman-3 -->
+        <div class="story-section" id="part-19">
+            <div class="story-text">
                 <p>Bredbent ställer du dig framför huset och möter banditernas blickar som nu var i panik.</p>
                 <p>Vid första anblick av din Fatman började de springa iväg.</p>
                 

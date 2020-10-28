@@ -15,6 +15,18 @@ body {
     height: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
 h1 {
     font-size: 3rem;
     font-weight: 400;
@@ -32,14 +44,16 @@ p {
 }
 
 em {
-    color: rgb(102, 102, 102);
+    color:#BC3FA3;
 }
 
 .button {
-    border: .5px darkslategray solid;
-    margin: 2rem 0;
+    border: 3px darkslategray solid;
+    margin: 2rem 1rem;
     padding: .5rem 2.5rem;
     cursor: pointer;
+    border-color: #F92C57;
+    font-weight: 600;
 }
 
 main {
@@ -63,6 +77,9 @@ main {
     flex-direction: column;
 
     transition: margin-left 1s ease;
+
+    color: rgb(235, 235, 235);
+    background: #26002D;
 }
 
 .story-text {
@@ -74,11 +91,14 @@ input {
     padding: .2rem 0 .2rem .5rem;
 
     border: none;
-    border-bottom: .5px black solid;
+    border-bottom: .5px rgb(235, 235, 235) solid;
+    background: #26002D;
 
     outline: none;
 }
 
 .start-page {
+    color: rgb(235, 235, 235);
+    background: none;
     
 }
