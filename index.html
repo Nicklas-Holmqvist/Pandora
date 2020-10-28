@@ -29,18 +29,18 @@
             <h2>Välj ett namn</h2>
             <p>Ju tuffare desto större chans att överleva!!!</p>
             <input type="text" id="myNameInput" placeholder="Ex. Claptrap">
-            <div class="button" id="chooseName"  >Välj namn</div>
+            <div class="button" id="chooseName">Välj namn</div>
             <p id="myNameIs"></p>
-            <div class="button" id="part-2-3">Fortsätt</div>
+            <div class="button to-part-3" id="part-2-3">Fortsätt</div>
         </div>
 
         <!-- Vek eller Klippa -->
         <div class="story-section" id="part-3">        
-            <p>Så nu vet vi vad du heter, eller något.<br>till den avgörande punkten i spelet.<br> Har du klösmage eller står du stadigt som en klippa?</p>
-            <input type="text" id="isTiredInMorning" placeholder="Vek / Klippa">
+            <p>Så nu vet vi vad du heter, eller något.<br>till den avgörande punkten i spelet.<br> Är du vek eller står du stadigt som en klippa?</p>
+            <input type="text" id="isStatus" placeholder="Vek / Klippa">
             <div class="button" id="chooseStatus">Tufft nog?</div>
             <p id="myStatus"></p>
-            <div class="button" id="part-3-4">Fortsätt</div>
+            <div class="button to-part-4" id="part-3-4">Fortsätt</div>
         </div>
 
         <!-- Du väcks ute i ödemarken -->
@@ -86,7 +86,7 @@
             <input type="text" id="getNumber" placeholder="****">
             <div class="button" id="lockUp">Lås upp</div>
             <p id="lockIsUp"></p>
-            <div class="button" id="part-6-7">Fortsätt</div>
+            <div class="button to-part-7" id="part-6-7">Öppna dörren</div>
         </div>
 
         <!-- Välj vapen -->
@@ -112,8 +112,7 @@
         <!-- Shotgun-1 -->
         <div class="story-section" id="part-8">
             <div class="story-text">
-                <p>Du öppnar piporna och pluggar i de två patronerna</p>
-                
+                <p>Du öppnar piporna och pluggar i de två patronerna</p>                
                 <em>- Hoppas på bra spridning!</em>
             </div>
             <div class="btn-group flex row">
@@ -130,13 +129,16 @@
                 - Vi lovar att inte skada dig!</em>                
                 <p>Man kan höra ett fnissande från personerna utanför.</p>
             </div>
-            <div class="button" id="part-9-10">Välj</div>
+            <div class="button" id="part-9-10">Händer?</div>
         </div>
 
         <!-- Shotgun-3 -->
         <div class="story-section" id="part-10">
-            <p id="endingShotgun1"></p>
-            <p id="endingShotgun2"></p>
+            <p>Du kikar ut snabbt och ser att bandinterna har omringar det lilla huset.</p>
+            <p>Tankarna flyger omkring i skallen men du kommer inte på något.</p>
+            <em>Plötsligt hörs en massa klickande.</em>
+            <p>Du tittar ner mot golvet, och in studsar ett antal granater.</p>
+            <em>- Heeeeeeeelvete!!!</em>
             <div class="button startOver" id="part-10-20">Restart</div>
         </div>
 
@@ -163,7 +165,7 @@
                 <p>Alla 16 banditer ställer sig i ett led och gör sig redo.</p>
                 <em>Svetten började rinna i pannan och du kände att slutet var nära</em>
             </div>
-            <div class="button" id="part-12-13">Förbered</div>
+            <div class="button" id="part-12-13">Möt din död!</div>
         </div>
 
         <!-- Pistol-3 -->
@@ -204,7 +206,7 @@
                 <em>Du trodde att du var safe nu, men ack vad det kan bedra en.</em>
                 <em>Bakom dig hördes ett väsande från ett av Pandoras mest skräkinjagande rovdjur</em>
             </div>
-            <div class="button" id="part-15-16">Förbered</div>
+            <div class="button" id="part-15-16">Vad är det?</div>
         </div>
 
         <!-- Prickskyttgevär-3 -->
@@ -240,7 +242,7 @@
                 <p>Till slut hittar du en liten mininuke liggande långt in i ett fack i en byrå.</p>
                 <em>- Nu har jag allt jag behöver!</em>
             </div>
-            <div class="button" id="part-18-19">Förbered</div>
+            <div class="button" id="part-18-19">Ladda</div>
         </div>
 
         <!-- Fatman-3 -->
