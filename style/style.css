@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Noto Sans JP', sans-serif; */
     font-family: 'Syne Mono', monospace;
 
 }
@@ -48,28 +47,39 @@ em {
 }
 
 .button {
-    border: 3px darkslategray solid;
+    border: 3px #731A38 solid;
     margin: 2rem 1rem;
     padding: .5rem 2.5rem;
     cursor: pointer;
-    border-color: #F92C57;
+    border-color: #731A38;
     font-weight: 600;
+
+    transition: all .5s ease;
+}
+
+.button:hover {
+    background: #731A38;
+    border-color: rgb(235, 235, 235);
 }
 
 main {
-    /* position: relative; */
+    position: relative;
     height: 100%;
     background: url(./img/T_14-01.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
 }
 
 .story-section {
-    /* position: absolute; */
+    position: absolute;
     height: 100%;
     width: 100%;
 
-    /* margin-left: 100%; */
+    padding: 0 1.5rem;
+    margin-left: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +103,7 @@ input {
     border: none;
     border-bottom: .5px rgb(235, 235, 235) solid;
     background: #26002D;
+    color: rgb(235, 235, 235);;
 
     outline: none;
 }
@@ -100,5 +111,5 @@ input {
 .start-page {
     color: rgb(235, 235, 235);
     background: none;
-    
+    margin-left:0;    
 }

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./style/style.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 
     <!-- Background attribute
@@ -22,7 +21,7 @@
         <div class="story-section start-page" id="part-1">
             <h1>Första dagen på Pandora</h1>
             <p>Här vill du inte vara ensam!</p>
-            <div class="button" id="part-1-btn" onclick="nextPart()">Starta spelet</div>
+            <div class="button" id="part-1-2">Starta spelet</div>
         </div>
 
         <!-- Välj namn -->
@@ -32,19 +31,16 @@
             <input type="text" id="myNameInput" placeholder="Ex. Claptrap">
             <div class="button" id="chooseName"  >Välj namn</div>
             <p id="myNameIs"></p>
-            <div class="button" id="part-2-btn" onclick="nextPart2()">Fortsätt</div>
+            <div class="button" id="part-2-3">Fortsätt</div>
         </div>
 
         <!-- Klösmage eller Klippa -->
-        <div class="story-section" id="part-3">
-            <p>Så nu vet vi vad du heter, eller något.</p>
-            <p>Nu till den avgörande punkten i spelet.</p>
-            
-            <p>Har du klösmage eller står du stadigt som en klippa?</p>
+        <div class="story-section" id="part-3">        
+            <p>Så nu vet vi vad du heter, eller något.<br>till den avgörande punkten i spelet.<br> Har du klösmage eller står du stadigt som en klippa?</p>
             <input type="text" id="isTiredInMorning" placeholder="Klösmage / Klippa">
             <div class="button" id="chooseStatus">Tufft nog?</div>
             <p id="myStatus"></p>
-            <div class="button" id="part-3-btn" onclick="nextPart3()">Fortsätt</div>
+            <div class="button" id="part-3-4">Fortsätt</div>
         </div>
 
         <!-- Du väcks ute i ödemarken -->
@@ -58,7 +54,7 @@
                 <p>Du reser dig från marken och ser dig omkring.</p>
                 <p>Lite längre bort ser du ett litet hus som du springer mot.</p>
             </div>
-            <div class="button" id="toKitchen">Gå mot huset</div>            
+            <div class="button" id="part-4-5">Gå mot huset</div>            
         </div>
 
         <!-- Omgivningen -->
@@ -73,7 +69,7 @@
                 I distansen hörs ett flertalet fordon närma sig i hög fart..."</em>
             </p>
             </div>
-            <div class="button" id="toHouse">Gå vidare</div>
+            <div class="button" id="part-5-6">Gå vidare</div>
         </div>
 
         <!-- Kassaskåpet -->
@@ -87,10 +83,10 @@
                 <p>Något är skrivet på baksidan.
                 Du river bort lappen och ser siffrorna 7274 lite vagt.</p>
             </div>
-            <input type="text" id="nr1" placeholder="****">
+            <input type="text" id="nrSafe" placeholder="****">
             <div class="button" id="lockUp">Lås upp</div>
             <p id="lockIsUp"></p>
-            <div class="button" id="part-4-btn" onclick="nextPart3()">Fortsätt</div>
+            <div class="button" id="part-6-7">Fortsätt</div>
         </div>
 
         <!-- Välj vapen -->
@@ -109,51 +105,57 @@
                 <p>Rösten i huvudet var tillbaka!</p>
                 <p><em>- Välj ett vapen fort, de kommer!</em></p>
             </div>
-            <input type="text" id="whatTransport" placeholder="pistol, shotgun, psg, fatman">
-            <div class="button" id="chooseTransport">Välj</div>
-            <p id="textTransport"></p>
-                <div class="button" id="part-4-btn" onclick="nextPart3()">Fortsätt</div>
+            <input type="text" id="whatWeapon" placeholder="pistol, shotgun, psg, fatman">
+            <div class="button" id="chooseWeaponScene">Välj</div>
+            <p id="textWeapon"></p>
         </div>
 
         <!-- Shotgun-1 -->
         <div class="story-section" id="part-8">
-            <div class="story-text">
-                <p>Du hör alla fordon stanna en bit från huset och en grov röst börjar ropa till dig.</p>
-                
-                <em>- Kom ut ifrån ditt lilla hål, vi vet att du är där inne!
-                - Vi lovar att inte skada dig!</em>
-                
-                <p>Man kan höra ett fnissande från personerna utanför.
-                
-                Gömmer du dig bakom tunnan precis utanför eller väljer du en kamikazerun?
-                </p>
-            </div>
-            <input type="text" id="doShotgun" placeholder="Gömmer eller Rushar?">
-            <div class="button">Välj</div>
-        </div>
-        
-        <!-- Shotgun-2 -->
-        <div class="story-section" id="part-9">
             <div class="story-text">
                 <p>Du öppnar piporna och pluggar i de två patronerna</p>
                 
                 <em>- Hoppas på bra spridning!</em>
             </div>
             <div class="btn-group flex row">
-            <div class="button">Jag är grym!</div>
-            <div class="button">Byt vapen!</div>
+            <div class="button" id="part-8-7">Jag är grym!</div>
+            <div class="button" id="part-8-9">Byt vapen!</div>
             </div>
+        </div>
+
+        <!-- Shotgun-2 -->
+        <div class="story-section" id="part-9">
+            <div class="story-text">
+                <p>Du hör alla fordon stanna en bit från huset och en grov röst börjar ropa till dig.</p>                
+                <em>- Kom ut ifrån ditt lilla hål, vi vet att du är där inne!
+                - Vi lovar att inte skada dig!</em>                
+                <p>Man kan höra ett fnissande från personerna utanför.</p>
+            </div>
+            <div class="button" id="part-9-10">Välj</div>
         </div>
 
         <!-- Shotgun-3 -->
         <div class="story-section" id="part-10">
             <p id="endingShotgun1"></p>
             <p id="endingShotgun2"></p>
-            <div class="button startOver">Restart</div>
+            <div class="button startOver" id="part-10-20">Restart</div>
         </div>
 
         <!-- Pistol-1 -->
         <div class="story-section" id="part-11">
+            <div class="story-text">
+                <p>Du snurrar på magasinet och tittar på de fyra ynkliga kulorna</p>
+                
+                <em>- Undrar hur många de är där ute?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button" id="part-11-12"></div>>Jag är grym!</div>
+            <div class="button" id="part-11-7"></div>>Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Pistol-2 -->
+        <div class="story-section" id="part-12">
             <div class="story-text">
                 <p>Med god tro till pistolen går du ut ställer dig framför huset.
                     Du skriker till banditerna.</p>
@@ -163,20 +165,7 @@
                 <p>Alla 16 banditer ställer sig i ett led och gör sig redo.</p>
                 <em>Svetten började rinna i pannan och du kände att slutet var nära</em>
             </div>
-            <div class="button">Förbered</div>
-        </div>
-
-        <!-- Pistol-2 -->
-        <div class="story-section" id="part-12">
-            <div class="story-text">
-                <p>Du snurrar på magasinet och tittar på de fyra ynkliga kulorna</p>
-                
-                <em>- Undrar hur många de är där ute?</em>
-            </div>
-            <div class="btn-group flex row">
-            <div class="button">Jag är grym!</div>
-            <div class="button">Byt vapen!</div>
-            </div>
+            <div class="button" id="part-12-13">Förbered</div>
         </div>
 
         <!-- Pistol-3 -->
@@ -189,11 +178,24 @@
                 <p>Skrattande släpar han dig blödande till bilen och binder fast dig bakom den.</p>
                 <em>- GRABBAR! IKVÄLL FÅR VI MIRELURK PÅ BORDET!</em>
             </div>
-            <div class="button startOver">Restart</div>
+            <div class="button startOver" id="part-13-20>Restart</div>
         </div>
 
         <!-- Prickskyttgevär-1 -->
         <div class="story-section" id="part-14">
+            <div class="story-text">
+                <p>Du stannar upp och tänker, kommer jag klara mig med endast ett skott?</p>
+                
+                <em>- Är jag en man eller en mus?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button" id="part-14-15">Jag är MAN!</div>
+            <div class="button" id="part-14-7">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Prickskyttgevär-2 -->
+        <div class="story-section" id="part-15">
             <div class="story-text">
                 <p>Innan alla banditer kom till huset, hade du hunnit springa upp på en höjd.
                     Där låg du förberedd i bakhåll med siktet mot den första bilen.</p>
@@ -204,20 +206,7 @@
                 <em>Du trodde att du var safe nu, men ack vad det kan bedra en.</em>
                 <em>Bakom dig hördes ett väsande från ett av Pandoras mest skräkinjagande rovdjur</em>
             </div>
-            <div class="button">Förbered</div>
-        </div>
-
-        <!-- Prickskyttgevär-2 -->
-        <div class="story-section" id="part-15">
-            <div class="story-text">
-                <p>Du stannar upp och tänker, kommer jag klara mig med endast ett skott?</p>
-                
-                <em>- Är jag en man eller en mus?</em>
-            </div>
-            <div class="btn-group flex row">
-            <div class="button">Jag är MAN!</div>
-            <div class="button">Byt vapen!</div>
-            </div>
+            <div class="button" id="part-15-16">Förbered</div>
         </div>
 
         <!-- Prickskyttgevär-3 -->
@@ -231,29 +220,29 @@
                 
                 <p>Några sekunder senare kommer det fem till lika stora bestar och drar iväg dig över det karja landskapet.</p>
             </div>
-            <div class="button startOver">Restart</div>
+            <div class="button startOver" id="part-16-20">Restart</div>
         </div>
-
+        
         <!-- Fatman-1 -->
         <div class="story-section" id="part-17">
+            <div class="story-text">                
+                <em>- Kommer jag överleva när det är så nära?</em>
+            </div>
+            <div class="btn-group flex row">
+            <div class="button" id="part-17-18">Om jag tar skydd?</div>
+            <div class="button" id="part-17-7">Byt vapen!</div>
+            </div>
+        </div>
+
+        <!-- Fatman-2 -->
+        <div class="story-section" id="part-18">
             <div class="story-text">
                 <em>- Något måste finnas här omkring som jag kan använda!</em>
                 <p>Du springer runt och rotar i hyllor, lådor, högt å lågt.</p>
                 <p>Till slut hittar du en liten mininuke liggande långt in i ett fack i en byrå.</p>
                 <em>- Nu har jag allt jag behöver!</em>
             </div>
-            <div class="button">Förbered</div>
-        </div>
-
-        <!-- Fatman-2 -->
-        <div class="story-section" id="part-18">
-            <div class="story-text">                
-                <em>- Kommer jag överleva när det är så nära?</em>
-            </div>
-            <div class="btn-group flex row">
-            <div class="button">Om jag tar skydd?</div>
-            <div class="button">Byt vapen!</div>
-            </div>
+            <div class="button" id="part-18-19">Förbered</div>
         </div>
 
         <!-- Fatman-3 -->
@@ -270,38 +259,9 @@
                 <em>- Denna brännan är inget att leka med</em>
                 <p>Gick i dina tanker medans kroppen sakta brann upp.</p>
             </div>
-            <div class="button">Restart</div>
+            <div class="button startOver" id="part-19-20">Restart</div>
         </div>
     </main>
-    <!-- <script src="./style/app.js"></script> -->
+    <script src="./style/app.js"></script>
 </body>
 </html>
-       <!-- Bilen -->
-       <!-- <div class="story-section">
-        <p>Bilen står i garaget precis jämte lägenhetshuset.</p>
-        <p>Det var tur den står där tänkte du för dig själv, det var en kall morgon idag.</p>
-        <p>Du börjar köra mot arbetet men du får snabbt stanna då det inträffat en olycka.</p>
-        <p>Du blir stående en bra stund för det fanns ingen väg runt.</p>
-        <p>Telefonen börjar ringa och du får en klump i magen!</p>
-        <div class="button answerPhone" >Svara i telefonen</div>
-    </div> -->
-
-    <!-- Cykeln -->
-    <!-- <div class="story-section">
-        <p>Det var lite kyligt att cykla men friskt.</p>
-        <p>Du kommer till arbetet, inte allt för sent.</p>
-        <div class="button" id="walkInsideJob">Gå in på jobbet</div>
-    </div> -->
-
-
-    <!-- På jobbet -->
-
-
-    <!-- Chefen ringer -->
-    <!-- <div class="story-section">
-        <p>Du springer ner för vägen mot busshållplatsen.</p>
-        <p>Väl framme så tyckte du det var konstigt att det inte fanns några personer som också väntade på bussen</p>
-        <p>Tiden går och du börjar bli orolig.Tittar på tidtabellen och ser att bussen har bytt till vintertabellen.</p>
-        <p>Telefonen börjar ringa och du får en klump i magen!</p>
-        <div class="button" id="restartGame" >Starta om spelet?</div>
-    </div> -->
