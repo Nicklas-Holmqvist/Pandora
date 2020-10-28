@@ -58,7 +58,7 @@ em {
 }
 
 .button:hover {
-    background: #731A38;
+    background: #731A3888;
     border-color: rgb(235, 235, 235);
 }
 
@@ -89,7 +89,7 @@ main {
     transition: margin-left 1s ease;
 
     color: rgb(235, 235, 235);
-    background: #26002D;
+    background: #26002DDD;
 }
 
 .story-text {
@@ -98,7 +98,8 @@ main {
 
 input {
     margin: 1rem 0;
-    padding: .2rem 0 .2rem .5rem;
+    padding: .5rem 0 .5rem .5rem;
+    width: 15rem;
 
     border: none;
     border-bottom: .5px rgb(235, 235, 235) solid;
