@@ -53,6 +53,31 @@ function playerMorningStatus() {
     }
 }
 
+// Kassaskåpet
+
+document.querySelector('#lockUp').addEventListener('click', lockUp)
+
+document.querySelector('.to-part-7').style.visibility = 'hidden';
+
+const lockUpResult = document.querySelector('#lockIsUp');
+
+function lockUp() {
+    const getSafeNr = document.querySelector('#getNumber').value;
+
+    if ( getSafeNr == 7274) {
+        lockUpResult.innerText = "Testa vänd på siffrorna! 7 kanske är 1 eller 2?";
+    }
+
+    else if ( getSafeNr == 1224) {
+        lockUpResult.innerText = "Äntligen! Nu ska vi se vad myName har att leka med!";
+        document.querySelector('.to-part-7').style.visibility = 'visible';
+        document.querySelector('#lockUp').style.display = 'none';
+    }
+    else {
+        lockUpResult.innerText = "Rösten talar till " + myName + " - testa 1224!";
+    }
+}
+
 // Välj vapen
 
 document.querySelector('#chooseWeaponScene').addEventListener('click', playerWeapon);
@@ -78,31 +103,6 @@ function playerWeapon() {
     }    
     else {
         resultat.innerText = "Det är tyvärr inget vapen!!!"
-    }
-}
-
-// Kassaskåpet
-
-document.querySelector('#lockUp').addEventListener('click', lockUp)
-
-document.querySelector('.to-part-7').style.visibility = 'hidden';
-
-const lockUpResult = document.querySelector('#lockIsUp');
-
-function lockUp() {
-    const getSafeNr = document.querySelector('#getNumber').value;
-
-    if ( getSafeNr == 7274) {
-        lockUpResult.innerText = "Testa vänd på siffrorna! 7 kanske är 1 eller 2?";
-    }
-
-    else if ( getSafeNr == 1224) {
-        lockUpResult.innerText = "Äntligen! Nu ska vi se vad myName har att leka med!";
-        document.querySelector('.to-part-7').style.visibility = 'visible';
-        document.querySelector('#lockUp').style.display = 'none';
-    }
-    else {
-        lockUpResult.innerText = "Rösten talar till " + myName + " - testa 1224!";
     }
 }
 
@@ -133,6 +133,9 @@ document.querySelector('#part-17-18').addEventListener('click', nextPart17);
 document.querySelector('#part-18-19').addEventListener('click', nextPart18);
 document.querySelector('#part-19-20').addEventListener('click', nextPart19);
 
+document.querySelector('#yesPlease').addEventListener('click', yesPlease);
+document.querySelector('#noHell').addEventListener('click', noHell);
+document.querySelector('#part-20-1').addEventListener('click', restartGame);
 
 // Scene changeBtn
 
@@ -274,3 +277,26 @@ function nextPart19() {
     const partOneHeight = document.querySelector('#part-19').style.marginLeft = "-100%";
     const partTwoHeight = document.querySelector('#part-20').style.marginLeft = "0";
 }
+function restartGame() {
+    location.reload();
+}
+
+document.querySelector('#part-20-1').style.visibility = "hidden";
+
+function yesPlease() {
+    document.querySelector('#textFinal').innerText = "Du tar ölen och lutar dig tillbaka å börjar halsa ölen."
+    document.querySelector('#textFinal2').innerText = "- Va fan var det där för en dröm!?"
+    document.querySelector('#yesPlease').style.display = "none";
+    document.querySelector('#noHell').style.display = "none";
+    document.querySelector('#part-20-1').style.visibility = "visible";    
+}
+
+function noHell() {
+    document.querySelector('#textFinal').innerText = "Du lyfter dig upp ur barstolen och börjar gå mot dörren."
+    document.querySelector('#textFinal2').innerText = "- Va fan var det i den ölen!?"
+    document.querySelector('#textFinal3').innerText = "Frågade " + myName + " bartendern innan han steg ut till Sanctuarys stökiga gator."
+    document.querySelector('#yesPlease').style.display = "none";
+    document.querySelector('#noHell').style.display = "none";
+    document.querySelector('#part-20-1').style.visibility = "visible";
+}
+

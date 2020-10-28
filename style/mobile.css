@@ -1,0 +1,11 @@
+@media (max-width: 34rem) {
+    .btn-group {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .btn-group .button {
+        margin-bottom: 0;
+        padding: .5rem 2.5rem;
+    }
+}
