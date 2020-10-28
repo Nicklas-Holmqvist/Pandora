@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Syne Mono', monospace;
+
 }
 
 html {
@@ -16,15 +18,26 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: 400;
+    padding-bottom: 2rem;
 }
 
 h2 {
     font-size: 1.4rem;
     font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+em {
+    color: rgb(102, 102, 102);
 }
 
 .button {
     border: .5px darkslategray solid;
+    margin: 2rem 0;
     padding: .5rem 2.5rem;
     cursor: pointer;
 }
@@ -32,6 +45,9 @@ h2 {
 main {
     /* position: relative; */
     height: 100%;
+    background: url(./img/T_14-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .story-section {
@@ -47,4 +63,22 @@ main {
     flex-direction: column;
 
     transition: margin-left 1s ease;
+}
+
+.story-text {
+    max-width: 38rem;
+}
+
+input {
+    margin: 1rem 0;
+    padding: .2rem 0 .2rem .5rem;
+
+    border: none;
+    border-bottom: .5px black solid;
+
+    outline: none;
+}
+
+.start-page {
+    
 }
