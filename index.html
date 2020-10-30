@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
 
@@ -12,6 +14,8 @@
     <!-- Background attribute
     <a href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a> -->
 
+    <!-- Script -->
+    <script defer src="./style/app.js"></script>
 
     <title>Första Dagen På Pandora | Nicklas Holmqvist</title>
 </head>
@@ -37,7 +41,7 @@
 
         <!-- Vek eller Klippa -->
         <div class="story-section" id="part-3">        
-            <p>Så nu vet vi vad du heter, eller något.<br>till den avgörande punkten i spelet.<br> Är du vek eller står du stadigt som en klippa?</p>
+            <p>Så nu vet vi vad du heter, eller något.<br>Nu till den avgörande punkten i spelet.<br> Är du vek eller står du stadigt som en klippa?</p>
             <input type="text" id="isStatus" placeholder="Vek / Klippa">
             <div class="button" id="chooseStatus">Tufft nog?</div>
             <p id="myStatus"></p>
@@ -48,12 +52,15 @@
         <div class="story-section" id="part-4">
             <div class="story-text">
                 <p>Du vaknar upp av att en inre röst ropar ditt namn.</p>
-                <p><em>- Det är dags att stiga upp innan de hittar dig!</em></p>
+
+                <em>- Det är dags att stiga upp innan de hittar dig!</em>
+
                 <p>Vem är det som pratar, det är ju ingen här!?</p>
-                <p><em>- Du behöver röra på dig, du har legat här allt för länge!</em></p>
-                
+
+                <em>- Du behöver röra på dig, du har legat här allt för länge!</em>   
+
                 <p>Du reser dig från marken och ser dig omkring.</p>
-                <p>Lite längre bort ser du ett litet hus som du springer mot.</p>
+                <p>Lite längre bort ser du ett litet hus som du börjar gå mot.</p>
             </div>
             <div class="button" id="part-4-5">Gå mot huset</div>            
         </div>
@@ -61,14 +68,12 @@
         <!-- Omgivningen -->
         <div class="story-section" id="part-5">
             <div class="story-text ">
-            <p><em>"Pandora är en kal och livlös plats där endast de tuffaste överlever.
-                
+            <em>"Pandora är en kal och livlös plats där endast de tuffaste överlever.                
                 Vattnet har sedan länge försvunnit och de brunnar som existerar är hårt bevakade..."
                 <br><br>
-                "Det har redan blivit förmiddag och över 40 grader i skuggen.
-                
-                I distansen hörs ett flertalet fordon närma sig i hög fart..."</em>
-            </p>
+                "Det har redan blivit förmiddag och över 40 grader i skuggen.                
+                I distansen hörs ett flertalet fordon närma sig i hög fart..."
+            </em>            
             </div>
             <div class="button" id="part-5-6">Gå vidare</div>
         </div>
@@ -77,12 +82,12 @@
         <div class="story-section" id="part-6">
             <div class="story-text">
                 <p>Du kommer in i huset och ser ett kassaskåp med sifferkod stående i ena hörnet.</p>
-                <p>Det sitter en lapp fast tejpad på luckan</p>
-                
-                <p><em>"Mina käraste"</em></p>
-                
+                <p>Det sitter en lapp fast tejpad på luckan</p>   
+
+                <em>"Mina käraste"</em>         
+
                 <p>Något är skrivet på baksidan.
-                Du river bort lappen och ser siffrorna 7274 lite vagt.</p>
+                Du river bort lappen försiktigt och ser siffrorna 7274 lite svagt.</p>
             </div>
             <input type="text" id="getNumber" placeholder="****">
             <div class="button" id="lockUp">Lås upp</div>
@@ -100,24 +105,28 @@
                     <li>Ett prickskyttgevär och endast en patron</li>
                     <li>En Fatman, ingen ammo</li>
                 </ul>
-                <p><em>- WTF, varför dessa skönheter utan någon ammo!?</em></p>
-                
+
+                <em>- WTF, varför dessa skönheter utan någon ammo!?</em> 
+
                 <p>Rösten i huvudet var tillbaka!</p>
-                <p><em>- Välj ett vapen fort, de kommer!</em></p>
+
+                <em>- Välj ett vapen fort, de kommer!</em>
             </div>
             <input type="text" id="whatWeapon" placeholder="pistol, shotgun, psg, fatman">
             <div class="button" id="chooseWeaponScene">Välj</div>
             <p id="textWeapon"></p>
         </div>
 
-        <!-- Shotgun-1 -->
+        <!-- Shotgun-1-ångra -->
         <div class="story-section" id="part-8">
             <div class="story-text">
-                <p>Du öppnar piporna och pluggar i de två patronerna</p>                
+                <p>Du öppnar piporna och pluggar i de två patronerna</p>    
+
                 <em>- Hoppas på bra spridning!</em>
+
             </div>
             <div class="btn-group flex row">
-            <div class="button" id="part-8-9">Jag är grym!</div>
+            <div class="button" id="part-8-9">KÖTTA!</div>
             <div class="button" id="part-8-7">Byt vapen!</div>
             </div>
         </div>
@@ -125,9 +134,11 @@
         <!-- Shotgun-2 -->
         <div class="story-section" id="part-9">
             <div class="story-text">
-                <p>Du hör alla fordon stanna en bit från huset och en grov röst börjar ropa till dig.</p>                
+                <p>Du hör alla fordon stanna en bit från huset och en grov röst börjar ropa till dig.</p> 
+
                 <em>- Kom ut ifrån ditt lilla hål, vi vet att du är där inne!
                 - Vi lovar att inte skada dig!</em>                
+
                 <p>Man kan höra ett fnissande från personerna utanför.</p>
             </div>
             <div class="button" id="part-9-10">Händer?</div>
@@ -137,16 +148,20 @@
         <div class="story-section" id="part-10">
             <p>Du kikar ut snabbt och ser att bandinterna har omringar det lilla huset.</p>
             <p>Tankarna flyger omkring i skallen men du kommer inte på något.</p>
+
             <em>Plötsligt hörs en massa klickande.</em>
+
             <p>Du tittar ner mot golvet, och in studsar ett antal granater.</p>
+
             <em>- Heeeeeeeelvete!!!</em>
             <div class="button startOver" id="part-10-20">Restart</div>
         </div>
 
-        <!-- Pistol-1 -->
+        <!-- Pistol-1-ångra -->
         <div class="story-section" id="part-11">
             <div class="story-text">
                 <p>Du snurrar på magasinet och tittar på de fyra ynkliga kulorna</p>
+
                 <em>- Undrar hur många de är där ute?</em>
             </div>
             <div class="btn-group flex row">
@@ -175,14 +190,17 @@
                 <p id="">Du hinner skjuta av tre skott innan de första skotten träffar dig i vänstra armen och högra benet.</p>
                 <p>Marken närmade sig fort och dammet yrde vid det tunga fallet.</p>
                 <p>Det tystade och du hörde fotsteg närma sig, och en grov röst hörs.</p>
+
                 <em>- Du kommer bli ett bra byte för kvällens jakt!</em>
+
                 <p>Skrattande släpar han dig blödande till bilen och binder fast dig bakom den.</p>
+
                 <em>- GRABBAR! IKVÄLL FÅR VI MIRELURK PÅ BORDET!</em>
             </div>
             <div class="button startOver" id="part-13-20">Restart</div>
         </div>
 
-        <!-- Prickskyttgevär-1 -->
+        <!-- Prickskyttgevär-1-ångra -->
         <div class="story-section" id="part-14">
             <div class="story-text">
                 <p>Du stannar upp och tänker, kommer jag klara mig med endast ett skott?</p>
@@ -202,10 +220,10 @@
                     Där låg du förberedd i bakhåll med siktet mot den första bilen.</p>
                 <p>Innan de hann stanna drog du iväg ett skott mot föraren.</p>
                 <p>Du såg hur förarens huvud bara poppade till och bilen far in i bilen intill.</p>
-                <p>Vid kollitionen sprängdes båda bilarna och banditerna sprang runt i lågor.</p>
-                
+                <p>Vid kollitionen sprängdes båda bilarna och banditerna sprang runt i lågor.</p>     
+
                 <em>Du trodde att du var safe nu, men ack vad det kan bedra en.</em>
-                <em>Bakom dig hördes ett väsande från ett av Pandoras mest skräkinjagande rovdjur</em>
+                <em>Bakom dig hördes ett väsande från ett av Pandoras mest skräckinjagande rovdjur</em>
             </div>
             <div class="button" id="part-15-16">Vad är det?</div>
         </div>
@@ -224,7 +242,7 @@
             <div class="button startOver" id="part-16-20">Restart</div>
         </div>
         
-        <!-- Fatman-1 -->
+        <!-- Fatman-1-ångra -->
         <div class="story-section" id="part-17">
             <div class="story-text">                
                 <em>- Kommer jag överleva när det är så nära?</em>
@@ -239,8 +257,10 @@
         <div class="story-section" id="part-18">
             <div class="story-text">
                 <em>- Något måste finnas här omkring som jag kan använda!</em>
+
                 <p>Du springer runt och rotar i hyllor, lådor, högt å lågt.</p>
                 <p>Till slut hittar du en liten mininuke liggande långt in i ett fack i en byrå.</p>
+
                 <em>- Nu har jag allt jag behöver!</em>
             </div>
             <div class="button" id="part-18-19">Ladda</div>
@@ -257,26 +277,33 @@
                 <em>- Hasta la vista baby!</em>      
                       
                 <p>Du bländas av ljuset från explotionen och du börjar känna värmen byggas upp</p>
+
                 <em>- Denna brännan är inget att leka med</em>
+
                 <p>Gick i dina tanker medans kroppen sakta brann upp.</p>
             </div>
             <div class="button startOver" id="part-19-20">Restart</div>
         </div>
 
         <!-- Final ending -->
-        <div class="story-section" id="part-20">
+        <div class="story-section last-scene" id="part-20">
             <div class="story-text">
                 <em>- Vakna ditt slödder!</em> 
                 <br>
                 <em>- Här kan du inte sova!</em> 
-                <p>Bartender smäller till dig på huvudet så att du vaknar.</p>
+                <p>Bartendern smäller till dig på huvudet så att du vaknar.</p>
                 <p>Du hoppar till i barstolen och slöddrar lite.</p>
+
                 <em>- Va? Vad är det som händer?</em> 
+
                 <p>Bartendern muttrar.</p>
+
                 <em>- Vill du ha en öl till?</em> 
                 <br>
                 <p id="textFinal"></p>
-                <p><em id="textFinal2"></em></p>
+
+                <em id="textFinal2"></em>
+                
                 <p id="textFinal3"></p>
             </div>
             <div class="btn-group flex row">
@@ -286,6 +313,5 @@
             <div class="button" id="part-20-1">Restart for real!</div>
         </div>
     </main>
-    <script src="./style/app.js"></script>
 </body>
 </html>

@@ -1,9 +1,18 @@
 
-// Välj ett namn
+/** My namn through the story*/
 let myName 
 
+/** Reload the page to reset all inputs for a new game*/
+function restartGame() {
+    location.reload();
+}
+
+// Function to get my name and som funny answer
+
+/** Button to get the name from input*/
 document.querySelector('#chooseName').addEventListener('click', getMyName);
 
+/** Reload the page to reset all inputs for a new game*/
 const myNameText = document.querySelector('#myName');
 document.querySelector('.to-part-3').style.visibility = 'hidden';
 
@@ -20,10 +29,20 @@ function getMyName() {
      else if (myName == "David" || myName == "david") {
          document.querySelector('#myNameIs').innerText = "Hehe, inte så troligt!"
      }
+
+     else if (myName == "Tsourdox" || myName == "tsourdox") {
+         document.querySelector('#myNameIs').innerText = "Är det du som heter David? Då får du välja ett nytt namn!"
+     }
+
+     else if (myName == "" || myName == " ") {
+         document.querySelector('#myNameIs').innerText = "Vad är det för ett namn?"
+     }
+
      else {
         myNameText.innerText = "Hej " + myName + ", det var ju ett fint namn. Men jag får se om jag kan komma ihåg det!"     
         document.querySelector('.to-part-3').style.visibility = 'visible';
         document.querySelector('#chooseName').style.display = 'none';
+        document.querySelector('#myNameInput').readOnly = true;
     }
 }
 
@@ -37,7 +56,7 @@ function playerMorningStatus() {
     const myStatus = document.querySelector('#isStatus').value;
 
     if (myStatus == "Vek" || myStatus == "vek") {
-        document.querySelector('#myStatus').innerText = "Oj oj oj..." + myName + " tyvärr inte tufft nog!!!";
+        document.querySelector('#myStatus').innerText = "Oj oj oj..." + myName + " det är tyvärr inte tufft nog!!!";
         myStatus.value = "";
     }
 
@@ -45,6 +64,7 @@ function playerMorningStatus() {
         document.querySelector('#myStatus').innerText = "Intressant " + myName + ", nu får de allt se upp!"
         document.querySelector('.to-part-4').style.visibility = 'visible';
         document.querySelector('#chooseStatus').style.display = 'none';
+        document.querySelector('#isStatus').readOnly = true;
     }
 
     else {
@@ -54,7 +74,6 @@ function playerMorningStatus() {
 }
 
 // Kassaskåpet
-
 document.querySelector('#lockUp').addEventListener('click', lockUp)
 
 document.querySelector('.to-part-7').style.visibility = 'hidden';
@@ -65,13 +84,18 @@ function lockUp() {
     const getSafeNr = document.querySelector('#getNumber').value;
 
     if ( getSafeNr == 7274) {
-        lockUpResult.innerText = "Testa vänd på siffrorna! 7 kanske är 1 eller 2?";
+        lockUpResult.innerText = myName + ", testa vänd på siffrorna! 7 kanske är 1 eller 2?";
+    }
+
+    else if ( getSafeNr == 1214) {
+        lockUpResult.innerText = "Du är nästan där, lite till!";
     }
 
     else if ( getSafeNr == 1224) {
-        lockUpResult.innerText = "Äntligen! Nu ska vi se vad myName har att leka med!";
+        lockUpResult.innerText = "Äntligen! Nu ska vi se vad " + myName + " har att leka med!";
         document.querySelector('.to-part-7').style.visibility = 'visible';
         document.querySelector('#lockUp').style.display = 'none';
+        document.querySelector('#getNumber').readOnly = true;
     }
     else {
         lockUpResult.innerText = "Rösten talar till " + myName + " - testa 1224!";
@@ -91,18 +115,25 @@ function playerWeapon() {
 
     if (whatWeapon == "Pistol" || whatWeapon == "pistol") {
         nextPartToPistolRegret()
+        textWeapon.innerText = "";
+
     }
     else if (whatWeapon == "Shotgun" || whatWeapon == "shotgun") {
         nextPartToShotgunRegret()
+        textWeapon.innerText = "";
+
     }
     else if (whatWeapon == "PSG" || whatWeapon == "psg") {
         nextPartToPsgRegret()
+        textWeapon.innerText = "";
+
     }
     else if (whatWeapon == "Fatman" || whatWeapon == "fatman") {
         nextPartToFatmanRegret()
+        textWeapon.innerText = "";
     }    
     else {
-        resultat.innerText = "Det är tyvärr inget vapen!!!"
+        textWeapon.innerText = "Det är tyvärr inget vapen!!!"
     }
 }
 
@@ -277,14 +308,13 @@ function nextPart19() {
     const partOneHeight = document.querySelector('#part-19').style.marginLeft = "-100%";
     const partTwoHeight = document.querySelector('#part-20').style.marginLeft = "0";
 }
-function restartGame() {
-    location.reload();
-}
+
+
 
 document.querySelector('#part-20-1').style.visibility = "hidden";
 
 function yesPlease() {
-    document.querySelector('#textFinal').innerText = "Du tar ölen och lutar dig tillbaka å börjar halsa ölen."
+    document.querySelector('#textFinal').innerText = "Du tar ölen och lutar dig tillbaka å börjar halsa den."
     document.querySelector('#textFinal2').innerText = "- Va fan var det där för en dröm!?"
     document.querySelector('#yesPlease').style.display = "none";
     document.querySelector('#noHell').style.display = "none";
