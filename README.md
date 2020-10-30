@@ -1,8 +1,8 @@
-# Laboration 1
-Inlämning nr 2 i kursen JavaScript - Första dagen i Pandora.
+# Första dagen på Pandora
+Inlämning nr 2 i kursen JavaScript där vi ska skapa ett spel/berättelse.
 
 ### Story
-Första dagen i Pandora är ett telltail game där du vaknar upp på Pandora och ska försöka klara dig de första minuterna.
+Första dagen på Pandora är ett telltail game där du vaknar upp på Pandora och ska försöka klara dig de första minuterna.
 Men gör man det?
 
 Berättelsen innhåller totalt 20 scener sammanlagt med alla vägar man har att gå.
